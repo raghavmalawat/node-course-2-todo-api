@@ -12,6 +12,13 @@ var Todo=mongoose.model('Todo',{
     completedAt:{
         type:Number,
         default:null
+    },
+    completed:{
+        type:Boolean,
+        default:null
+    },
+    completedAt:{
+        type:Number,
     }
 });
 
