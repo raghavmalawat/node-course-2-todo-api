@@ -6,8 +6,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db)=>{
     }
     console.log('Connected to mongoDb server');
 
-    db.collection('Todos').find({completed:false}).toArray().then((docs)=>{
-        console.log('Todos');
+    db.collection('Users').find({age:25}).toArray().then((docs)=>{
+        console.log('Users');
         console.log(JSON.stringify(docs,undefined,2));
     },(err)=>{
         Console.log('Unable to fetch todos',err);
